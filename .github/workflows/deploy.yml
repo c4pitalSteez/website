@@ -17,6 +17,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
 
+      - name: Change to package directory
+        run: cd react
+
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
