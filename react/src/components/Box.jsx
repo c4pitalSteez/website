@@ -9,7 +9,7 @@ function Box(props) {
   // Hold state for hovered and clicked events
   const [hovered, hover] = useState(false)
   const springProps = useSpring({
-    scale: hovered ? 1.5 : 1,
+    scale: hovered ? 1.7 : 1,
     config: { mass: 1, tension: 150, friction: 30 }
   });
   // Subscribe this component to the render-loop, rotate the mesh every frame
