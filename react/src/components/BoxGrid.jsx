@@ -14,7 +14,7 @@ function BoxGrid() {
                 <Box 
                     key={key} 
                     position={[-2.5*Math.floor(x/2) + 2.7 * (index % x), 2.7*Math.floor(y/2) - 2.7 * Math.floor(index / x), -1/cubeSize * 1000]}
-                    rotation={[0, index / x / 6.28, 0]}
+                    rotation={[0, ((index / x) + (index % x)) / (2 * Math.PI), 0]}
                 />
             ))}
         </>
